@@ -7,6 +7,7 @@ fi
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 # Autostart a TMUX session on shell launch
 ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
 # Set Catppuccin Machiatto for FZF
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
@@ -74,6 +75,10 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# Aliases
+alias vmstart="colima start --vm-type=vz --vz-rosetta"
+alias vmstop="colima stop"
 
 # Shell integrations
 eval "$(fzf --zsh)"
