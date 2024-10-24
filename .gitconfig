@@ -1,0 +1,12 @@
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[user]
+        signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICSBvU1TKvbi+bIo+5qq9/hmCCZydo4AA4H+6zHrYwbU
+	name = Maximilian Faller
+	email = 23641084+xfallme@users.noreply.github.com
+[init]
+	defaultBranch = main
