@@ -79,6 +79,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias vmstart="colima start --vm-type=vz --vz-rosetta"
 alias vmstop="colima stop"
+alias python="python3"
 
 # Shell integrations
 eval "$(fzf --zsh)"
