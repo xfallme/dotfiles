@@ -85,4 +85,5 @@ alias python="python3"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 alias ls="eza --icons=always"
-source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
+
+eval "$(pkgx --quiet dev --shellcode)"  # https://github.com/pkgxdev/dev
