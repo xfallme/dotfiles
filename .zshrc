@@ -30,6 +30,9 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+zinit light lukechilds/zsh-nvm
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
@@ -100,4 +103,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
