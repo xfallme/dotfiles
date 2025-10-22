@@ -33,7 +33,7 @@ item = "GitHub"
 vault = "Private"
 
 [[ssh-keys]]
-item = "Proxmox VMs"
+item = "Defaul SSH Key"
 vault = "Private"
 
 [[ssh-keys]]
