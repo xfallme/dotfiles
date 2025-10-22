@@ -86,8 +86,6 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 alias ls="eza --icons=always"
 
-eval "$(pkgx --quiet dev --shellcode)"  # https://github.com/pkgxdev/dev
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
