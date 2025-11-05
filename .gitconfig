@@ -12,3 +12,5 @@
 	defaultBranch = main
 [core]
 	excludesfile = /Users/maximilian/.gitignore-global
+[pull]
+	rebase = true
