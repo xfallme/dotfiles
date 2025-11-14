@@ -42,6 +42,13 @@ zinit snippet OMZP::git
 zinit snippet OMZP::docker
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::1password
+zinit snippet OMZP::systemadmin
+zinit snippet OMZP::vscode
+# k8s
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::minikube
+zinit snippet OMZP::helm
+zinit snippet OMZP::fluxcd
 
 # Load completions
 autoload -Uz compinit && compinit
