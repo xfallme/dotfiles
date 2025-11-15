@@ -4,7 +4,7 @@ This directory contains the dotfiles for my system
 
 ## Requirements
 
-Ensure you have the following installed on your system (requires brew)
+Ensure you have the following installed on your system (requires [brew](https://brew.sh/))
 
 ### Git
 
@@ -23,7 +23,7 @@ brew install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/dreamsofautonomy/dotfiles.git
+$ git clone git@github.com/xfallme/dotfiles.git
 $ cd dotfiles
 ```
 
