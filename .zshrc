@@ -5,8 +5,8 @@ fi
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-# Autostart a TMUX session on shell launch
-ZSH_TMUX_AUTOSTART="true"
+# Don't autostart a TMUX session on shell launch
+ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
 # Set Catppuccin Machiatto for FZF
 export FZF_DEFAULT_OPTS=" \
