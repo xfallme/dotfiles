@@ -5,9 +5,15 @@ fi
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-# Don't autostart a TMUX session on shell launch
-ZSH_TMUX_AUTOSTART="false"
-ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
+
+# Run TMUX, except for vscode
+if [[ -n "$VSCODE_PID" ]] || [[ "$TERM_PROGRAM" == "vscode" ]]; then
+  ZSH_TMUX_AUTOSTART="false"
+else
+  ZSH_TMUX_AUTOSTART="true"
+  ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
+fi
+
 # Set Catppuccin Machiatto for FZF
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
