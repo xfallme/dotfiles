@@ -11,6 +11,6 @@
 [init]
 	defaultBranch = main
 [core]
-	excludesfile = /Users/maximilian/.gitignore-global
+	excludesfile = /Users/maximilian/.config/git/.gitignore-global
 [pull]
 	rebase = true
