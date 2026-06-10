@@ -1,7 +1,0 @@
---target=~/.config
---ignore=.stowrc
---ignore=common
---ignore=macos
---ignore=bazzite
---ignore=DS_Store
---ignore=setup.sh
