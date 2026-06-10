@@ -1,6 +1,6 @@
-# My dotfiles repo, currently only running on MacOS
+# My dotfiles repo, currently running on MacOS and Bazzite
 
-This directory contains the dotfiles for my system
+This directory contains the dotfiles for my systems
 
 ## Requirements
 
@@ -27,8 +27,9 @@ $ git clone git@github.com/xfallme/dotfiles.git
 $ cd dotfiles
 ```
 
-then use GNU stow to create symlinks
+then use the setup script to create symlinks
 
 ```
-$ stow .
+$ chmod +x setup.sh
+$ ./setup.sh
 ```
