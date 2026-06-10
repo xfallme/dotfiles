@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-stow . --target=$HOME --ignore=.stowrc --ignore=common --ignore=macos --ignore=bazzite --ignore=DS_Store --ignore=setup.sh
 stow common --target=$HOME/.config --ignore=DS_Store
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
+    # tmux and zsh
+    stow . --target=$HOME --ignore=.stowrc --ignore=common --ignore=macos --ignore=bazzite --ignore=DS_Store --ignore=setup.sh
+    
     stow macos --target=$HOME/.config --ignore=DS_Store
     # check if link or file exists before creating it
     if [ ! -L ~/.ssh/config ] && [ ! -f ~/.ssh/config ]; then
