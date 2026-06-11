@@ -16,4 +16,9 @@ fi
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow bazzite --target=$HOME/.config --ignore=DS_Store
+    
+    # Check if 1Password is configured as SSH_AUTH_SOCK
+    if [[ -z "$SSH_AUTH_SOCK" ]]; then
+        echo 'export SSH_AUTH_SOCK=~/.1password/agent.sock' >> ~/.bashrc
+    fi
 fi
